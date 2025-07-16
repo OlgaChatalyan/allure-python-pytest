@@ -3,7 +3,6 @@ import pytest
 
 @allure.tag("For_testplan")
 @allure.title("Fixture title")
-@allure.severity("Blocker")
 @pytest.fixture
 def titled_fixture():
     pass
@@ -13,6 +12,7 @@ def test_with_fixture_title(titled_fixture):
     pass
 
 @pytest.fixture(scope="session")
+@allure.severity("Blocker")
 def session_level_yield_fixture():
     with allure.step("Step inside session level fixture"):
         pass
