@@ -8,7 +8,7 @@ from allure_commons.types import Severity
 @allure.epic("Allure TestOps")
 @allure.feature("Attachments")
 @allure.story("Add atachment")
-@allure.severity(allure.severity_level.CRITICAL)
+@allure.severity("CRITICAL")
 
 def test_attach():
     allure.attach.file(os.path.join("resources", "allure-logo.png"), name="PNG example",
