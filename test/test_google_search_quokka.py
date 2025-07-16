@@ -4,6 +4,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.options import Options
+from webdriver_manager.chrome import ChromeDriverManager
 import time
 
 @allure.tag('UI Tests')
@@ -15,7 +16,7 @@ def test_google_search_quokka_images(tmp_path):
     # Настройка Chrome
     chrome_options = Options()
     chrome_options.add_argument("--headless")  # Убрать, если нужен видимый браузер
-    driver = webdriver.Chrome(options=chrome_options)
+    driver = webdriver.Chrome(ChromeDriverManager().install(), options=chrome_options)
 
     try:
         with allure.step("Open google.com"):
