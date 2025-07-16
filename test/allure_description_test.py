@@ -10,7 +10,7 @@ def test_docstring_description():
     """
     pass
 
-
+@allure.severity("Critical")
 @allure.description(
     """
 This is test description from decorator\n
@@ -19,7 +19,7 @@ Scenario:
   """)
 def test_decorated_description():
     pass
-
+@allure.severity("Major")
 @allure.description_html("""
 This is <b>HTML</b> test description
 <h2>Scenario:</h2>
