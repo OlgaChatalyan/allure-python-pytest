@@ -100,7 +100,7 @@ def test_pass_reset():
 #@allure.label("owner", "Alex")
 @allure.epic("Регистрация и авторизация")
 @allure.feature("Авторизация")
-@allure.story("Не успешная авторизация")
+@allure.story("Неуспешная авторизация")
 def test_auth_error():
     with allure.step("Открыть главную страницу сайта"):
         pass
