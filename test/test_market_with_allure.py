@@ -118,7 +118,7 @@ def test_auth_error():
 @allure.title("Отображение результатов поиска с корректной сортировкой")
 #@allure.label("owner", "Alex")
 @allure.epic("Поиск и каталог товаров")
-@allure.feature("Поиск и каталог товаров")
+@allure.feature("Поиск по каталогу")
 @allure.story("Основной поиск")
 def test_main_search_with_sort():
     with allure.step("Перейти в каталог товаров"):
@@ -166,7 +166,7 @@ def test_main_search_with_sort():
 @allure.title("Поиск отсутствующего товара")
 #@allure.label("owner", "Alex")
 @allure.epic("Поиск и каталог товаров")
-@allure.feature("Поиск и каталог товаров")
+@allure.feature("Поиск по каталогу")
 @allure.story("Основной поиск")
 def test_search_missing_item():
     with allure.step("Перейти в каталог товаров"):
@@ -183,7 +183,7 @@ def test_search_missing_item():
 @allure.title("Поиск по артикулу")
 #@allure.label("owner", "Alex")
 @allure.epic("Поиск и каталог товаров")
-@allure.feature("Поиск и каталог товаров")
+@allure.feature("Поиск по каталогу")
 @allure.story("Основной поиск")
 def test_article_search():
     with allure.step("Перейти в каталог товаров"):
@@ -200,7 +200,7 @@ def test_article_search():
 @allure.title("Поиск по названию товара")
 #@allure.label("owner", "Alex")
 @allure.epic("Поиск и каталог товаров")
-@allure.feature("Поиск и каталог товаров")
+@allure.feature("Поиск по каталогу")
 @allure.story("Основной поиск")
 def test_name_search():
     with allure.step("Перейти в каталог товаров"):
@@ -217,7 +217,7 @@ def test_name_search():
 @allure.title("Поиск по части названия товара")
 #@allure.label("owner", "Alex")
 @allure.epic("Поиск и каталог товаров")
-@allure.feature("Поиск и каталог товаров")
+@allure.feature("Поиск по каталогу")
 @allure.story("Основной поиск")
 def test_part_name_search():
     with allure.step("Перейти в каталог товаров"):
