@@ -5,10 +5,11 @@ import allure
 @allure.link("https://github.com/allure-examples/", name="Allure Examples")
 @allure.issue("https://github.com/allure-examples/allure-examples/issues/1", name="ISSUE-1")
 @allure.testcase("https://github.com/allure-examples/allure-examples/issues/2", name="TESTCASE-2")
+@allure.epic("Allure TestOps")
 def test_allure_links():
     pass
 
-
+@allure.epic("Allure TestOps")
 def test_allure_dynamic_links():
     allure.dynamic.link("https://github.com/allure-examples/allure-examples/pull/4",
                         name="Allure Examples pull request 4")
@@ -23,5 +24,6 @@ def pr(pr_id):
 
 
 @pr("123")
+@allure.epic("Allure TestOps")
 def test_link_templates():
     pass
