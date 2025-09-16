@@ -2,20 +2,19 @@ import allure
 import pytest
 from allure_commons.types import Severity
 
-@allure.epic("Allure TestOps")
-@allure.tag("For_testplan")
-@allure.title("Fixture title")
+
 @pytest.fixture
 def titled_fixture():
     pass
 
-
+@allure.epic("Allure TestOps")
+@allure.tag("For_testplan")
+@allure.title("Fixture title")
 def test_with_fixture_title(titled_fixture):
     pass
 
-@allure.epic("Allure TestOps")
+
 @pytest.fixture(scope="session")
-@allure.severity("Blocker")
 def session_level_yield_fixture():
     with allure.step("Step inside session level fixture"):
         pass
@@ -25,9 +24,7 @@ def session_level_yield_fixture():
     with allure.step("Step inside finalizer session level fixture"):
         pass
 
-@allure.epic("Allure TestOps")
 @pytest.fixture(scope="module")
-@allure.severity("Blocker")
 def module_level_yield_fixture():
     with allure.step("Step inside module level fixture"):
         pass
@@ -38,7 +35,7 @@ def module_level_yield_fixture():
         pass
 
 
-@allure.epic("Allure TestOps")
+
 @pytest.fixture
 def function_level_yield_fixture():
     with allure.step("Step inside function level fixture"):
