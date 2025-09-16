@@ -10,6 +10,7 @@ def test_docstring_description():
     """
     pass
 
+@allure.epic("Allure TestOps")
 @allure.severity("Critical")
 @allure.description(
     """
@@ -19,6 +20,7 @@ Scenario:
   """)
 def test_decorated_description():
     pass
+@allure.epic("Allure TestOps")
 @allure.severity("Major")
 @allure.description_html("""
 This is <b>HTML</b> test description
