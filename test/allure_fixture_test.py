@@ -82,12 +82,12 @@ def function_level_fixture(request):
 
     request.addfinalizer(finalizer)
 
-
+@allure.epic("Allure TestOps")
 def test_allure_yield_fixture(session_level_yield_fixture, module_level_yield_fixture, function_level_yield_fixture):
     with allure.step("Step inside test_allure_yield_fixture"):
         pass
 
-
+@allure.epic("Allure TestOps")
 def test_allure_fixture_with_finalizer(session_level_fixture, module_level_fixture, function_level_fixture):
     with allure.step("Step inside test_allure_fixture_with_finalizer"):
         pass
