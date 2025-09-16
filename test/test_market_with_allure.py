@@ -167,7 +167,7 @@ def test_main_search_with_sort():
 #@allure.label("owner", "Alex")
 @allure.epic("Поиск и каталог товаров")
 @allure.feature("Поиск по каталогу")
-@allure.story("Основной поиск")
+@allure.story("Сложный поиск")
 def test_search_missing_item():
     with allure.step("Перейти в каталог товаров"):
         pass
@@ -218,7 +218,7 @@ def test_name_search():
 #@allure.label("owner", "Alex")
 @allure.epic("Поиск и каталог товаров")
 @allure.feature("Поиск по каталогу")
-@allure.story("Основной поиск")
+@allure.story("Сложный поиск")
 def test_part_name_search():
     with allure.step("Перейти в каталог товаров"):
         pass
