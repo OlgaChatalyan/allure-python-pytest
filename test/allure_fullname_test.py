@@ -1,4 +1,5 @@
 import pytest
+import allure
 from allure_commons.reporter import AllureReporter
 from allure_pytest.listener import AllureListener
 
@@ -13,5 +14,6 @@ def allure_reporter(request) -> AllureReporter:
     )
     return listener.allure_logger
 
+@allure.epic("Allure TestOps")
 def test_fullname(allure_reporter):
     assert allure_reporter.get_test(None).fullName == "test.allure_fullname_test#test_fullname"
