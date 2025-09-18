@@ -17,14 +17,17 @@ def setup_function():
     yield
     print("\n[Teardown Function] Tidying up after a test...")
 
+@allure.epic("Allure TestOps")
 def test_step1(setup_module, setup_function):
     print("[Test Step 1] Performing test step 1...")
     assert True, "Step 1 passed"
 
+@allure.epic("Allure TestOps")
 def test_step2(setup_module, setup_function):
     print("[Test Step 2] Performing test step 2...")
     assert 1 + 1 == 2, "Step 2 passed"
 
+@allure.epic("Allure TestOps")
 def test_step3(setup_module, setup_function):
     print("[Test Step 3] Performing test step 3...")
     assert "a" in "apple", "Step 3 passed"
