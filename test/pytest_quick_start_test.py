@@ -2,7 +2,7 @@ import allure
 
 pytestmark = [allure.epic("My first epic"), allure.feature("Quick start feature")]
 
-
+@allure.epic("Allure TestOps")
 @allure.id(1)
 @allure.story("Simple story")
 @allure.title("test_allure_simple_test displayName")
