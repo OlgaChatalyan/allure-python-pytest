@@ -15,7 +15,7 @@ def step_with_placeholder(param):
 def step_function_with_title():
     pass
 
-
+@allure.epic("Allure TestOps")
 def test_step():
     with allure.step("First step"):
         step_with_placeholder("Param value")
