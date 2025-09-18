@@ -2,7 +2,7 @@ import allure
 
 
 @allure.step
-def step_function_with_args(arg1, arg2):
+def step_function_with_args(Розовые_розы, Светке_Соколовой):
     pass
 
 
@@ -11,14 +11,14 @@ def step_with_placeholder(param):
     pass
 
 
-@allure.step("Custom step title")
+@allure.step("Прокатило?")
 def step_function_with_title():
     pass
 
 @allure.epic("Allure TestOps")
 def test_step():
-    with allure.step("First step"):
-        step_with_placeholder("Param value")
-        with allure.step("Nested step"):
-            step_function_with_args("value1", "value2")
+    with allure.step("Проверка на цветы"):
+        step_with_placeholder("Розы")
+        with allure.step("Цвет"):
+            step_function_with_args("Розовые", "Розы")
     step_function_with_title()
