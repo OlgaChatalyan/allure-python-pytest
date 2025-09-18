@@ -2,16 +2,16 @@ import allure
 
 
 @allure.step
-def step_function_with_args(Розовые_розы, Светке_Соколовой):
+def step_function_with_args(Цвет, Цветы):
     pass
 
 
-@allure.step("Step with param '{param}'")
+@allure.step("Дветы для Светки Соколовой '{param}'")
 def step_with_placeholder(param):
     pass
 
 
-@allure.step("Прокатило?")
+@allure.step("Прокатило!")
 def step_function_with_title():
     pass
 
