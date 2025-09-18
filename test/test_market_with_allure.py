@@ -1,5 +1,6 @@
 import allure
 import pytest
+import random
 def lucky_step(chance: float = 0.6) -> None:
     """
     С вероятностью `chance` ломает тест.
