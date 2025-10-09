@@ -10,4 +10,3 @@ import allure
 def test_demo_manual():
     with allure.step("Демонстрационный шаг"):
         pass
-    custom_step()
