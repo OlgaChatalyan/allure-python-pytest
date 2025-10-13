@@ -12,6 +12,7 @@ def test_docstring_description():
 
 @allure.epic("Allure TestOps")
 @allure.severity("Critical")
+@allure.manual(True)
 @allure.description(
     """
 This is test description from decorator\n
