@@ -8,7 +8,7 @@ def titled_fixture():
     pass
 
 @allure.epic("Allure TestOps")
-@allure.label("tag", "For_testplan")
+@allure.label("tag", "For_testplan_2")
 @allure.title("Fixture title")
 def test_with_fixture_title(titled_fixture):
     pass
