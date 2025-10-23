@@ -7,7 +7,7 @@ from allure_commons.types import Severity
 def titled_fixture():
     pass
 
-@allure.epic("Allure TestOps")
+я специально меняю эту строчку, чтобы показать ребятам на обучении
 @allure.label("tag", "For_testplan")
 @allure.title("Fixture title")
 def test_with_fixture_title(titled_fixture):
