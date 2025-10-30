@@ -1,6 +1,7 @@
 import allure
 from allure_commons.types import Severity
 
+@allure.severity(Severity.CRITICAL)
 def test_docstring_description():
     """
     This is a test docstring
