@@ -12,15 +12,17 @@ def test_allure_bdd_labels():
 @allure.parent_suite("Custom parent suite")
 @allure.suite("Custom suite")
 @allure.sub_suite("Custom sub suite")
+@allure.severity(Severity.CRITICAL)
 def test_allure_suites():
     pass
 
 
 @allure.label("allure-examples", "allure-pytest")
+@allure.severity(Severity.CRITICAL)
 def test_allure_custom_labels():
     pass
 
-
+@allure.severity(Severity.CRITICAL)
 def test_dynamic_labels():
     allure.dynamic.label("test-image", "some-image:latest")
 
@@ -31,15 +33,18 @@ def test_allure_severity():
 
 
 @allure.tag("Tagged test")
+@allure.severity(Severity.CRITICAL)
 def test_allure_tags():
     allure.dynamic.tag("Dynamic tag")
 
 
 @allure.label("owner", "admin")
+@allure.severity(Severity.CRITICAL)
 def test_owner():
     pass
 
 
 @allure.id(123)
+@allure.severity(Severity.CRITICAL)
 def test_allure_id():
     pass
