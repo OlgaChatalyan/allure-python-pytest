@@ -1,5 +1,5 @@
 import allure
-
+from allure_commons.types import Severity
 
 def test_docstring_description():
     """
@@ -11,7 +11,7 @@ def test_docstring_description():
     pass
 
 @allure.epic("Allure TestOps")
-@allure.severity("Critical")
+@allure.severity(Severity.NORMAL)
 @allure.manual(True)
 @allure.description(
     """
@@ -22,7 +22,7 @@ Scenario:
 def test_decorated_description():
     pass
 @allure.epic("Allure TestOps")
-@allure.severity("Major")
+@allure.severity(Severity.CRITICAL)
 @allure.description_html("""
 This is <b>HTML</b> test description
 <h2>Scenario:</h2>
@@ -33,7 +33,7 @@ This is <b>HTML</b> test description
 def test_decorated_html_description():
     pass
 
-
+@allure.severity(Severity.CRITICAL)
 def test_dynamic_description():
     """
     Initial test description
