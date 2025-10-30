@@ -5,6 +5,7 @@ import pytest
 @pytest.mark.parametrize("test_param", ["First name", "Second name"], ids=["first", "second"])
 @allure.title("test_allure_parametrized_test [{test_param}]")
 @allure.epic("Allure TestOps")
+@allure.label("tag", "Regression")
 def test_allure_parametrized_test(test_param):
     with allure.step("Step inside parametrized test"):
         pass
@@ -18,5 +19,6 @@ def parametrized_fixture(request):
         pass
 
 @allure.epic("Allure TestOps")
+@allure.label("tag", "Regression")
 def test_allure_parametrized_fixture(parametrized_fixture):
     pass
