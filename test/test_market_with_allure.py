@@ -62,7 +62,7 @@ def lucky_step(chance: float = 0.6) -> None:
 @allure.epic("Регистрация и авторизация")
 @allure.feature("Авторизация")
 @allure.story("Восстановление пароля")
-@allure.severity(Severity.CRITICAL)
+@allure.severity(Severity.normal)
 def test_pass_reset():
     with allure.step("Открыть главную страницу сайта"):
         pass
@@ -103,7 +103,7 @@ def test_pass_reset():
 @allure.epic("Регистрация и авторизация")
 @allure.feature("Авторизация")
 @allure.story("Неуспешная авторизация")
-@allure.severity(Severity.CRITICAL)
+@allure.severity(Severity.normal)
 def test_auth_error():
     with allure.step("Открыть главную страницу сайта"):
         pass
@@ -123,7 +123,7 @@ def test_auth_error():
 @allure.epic("Поиск и каталог товаров")
 @allure.feature("Поиск по каталогу")
 @allure.story("Основной поиск")
-@allure.severity(Severity.CRITICAL)
+@allure.severity(Severity.normal)
 def test_main_search_with_sort():
     with allure.step("Перейти в каталог товаров"):
         pass
@@ -172,7 +172,7 @@ def test_main_search_with_sort():
 @allure.epic("Поиск и каталог товаров")
 @allure.feature("Поиск по каталогу")
 @allure.story("Сложный поиск")
-@allure.severity(Severity.Major)
+@allure.severity(Severity.critical)
 def test_search_missing_item():
     with allure.step("Перейти в каталог товаров"):
         pass
@@ -190,7 +190,7 @@ def test_search_missing_item():
 @allure.epic("Поиск и каталог товаров")
 @allure.feature("Поиск по каталогу")
 @allure.story("Основной поиск")
-@allure.severity(Severity.Major)
+@allure.severity(Severity.critical)
 def test_article_search():
     with allure.step("Перейти в каталог товаров"):
         pass
@@ -208,7 +208,7 @@ def test_article_search():
 @allure.epic("Поиск и каталог товаров")
 @allure.feature("Поиск по каталогу")
 @allure.story("Основной поиск")
-@allure.severity(Severity.Major)
+@allure.severity(Severity.critical)
 def test_name_search():
     with allure.step("Перейти в каталог товаров"):
         pass
@@ -226,7 +226,7 @@ def test_name_search():
 @allure.epic("Поиск и каталог товаров")
 @allure.feature("Поиск по каталогу")
 @allure.story("Сложный поиск")
-@allure.severity(Severity.Major)
+@allure.severity(Severity.critical)
 def test_part_name_search():
     with allure.step("Перейти в каталог товаров"):
         pass
@@ -244,7 +244,7 @@ def test_part_name_search():
 @allure.epic("Личный кабинет")
 @allure.feature("Просмотр и редактирование профиля")
 @allure.story("История заказов")
-@allure.severity(Severity.Major)
+@allure.severity(Severity.critical)
 def test_order_history():
     with allure.step("Перейти в личный кабинет"):
         pass
@@ -270,7 +270,7 @@ def test_order_history():
 @allure.epic("Личный кабинет")
 @allure.feature("Список товаров")
 @allure.story("Избранное")
-@allure.severity(Severity.Major)
+@allure.severity(Severity.trivial)
 def test_show_favorite_items():
     with allure.step("Перейти в избранное"):
         pass
@@ -284,7 +284,7 @@ def test_show_favorite_items():
 @allure.epic("Личный кабинет")
 @allure.feature("Список товаров")
 @allure.story("Корзина")
-@allure.severity(Severity.Major)
+@allure.severity(Severity.trivial)
 def test_items_in_card():
     with allure.step("Перейти в корзину"):
         pass
