@@ -20,6 +20,14 @@ on:
         description: OS
         required: false
         default: macOS 
+      DEVICE:
+        description: DEVICE
+        required: false
+        default: Galaxy s25 Plus 
+      LANGUAGE:
+        description: LANGUAGE
+        required: false
+        default: Ko 
       ALLURE_USERNAME:
         description: "ALLURE_USERNAME service parameter. Leave blank"
         required: false
