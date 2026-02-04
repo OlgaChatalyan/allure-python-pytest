@@ -68,8 +68,8 @@ jobs:
         env:
           ENDPOINT: ${{ github.event.inputs.ENDPOINT}}
           BROWSER: ${{ github.event.inputs.BROWSER}}
-          ASR_DEVICE: ${{ github.event.inputs.DEVICE}}
-          ASR_LANGUAGE: ${{ github.event.inputs.LANGUAGE}}
+          ASR_DEVICE: ${{ github.event.inputs.ASR_DEVICE}}
+          ASR_LANGUAGE: ${{ github.event.inputs.ASR_LANGUAGE}}
           OS: ${{ github.event.inputs.OS}}
           ALLURE_JOB_RUN_ID: ${{ github.event.inputs.ALLURE_JOB_RUN_ID }}
           ALLURE_RESULTS: "allure-results"
