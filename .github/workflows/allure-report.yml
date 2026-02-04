@@ -20,11 +20,11 @@ on:
         description: OS
         required: false
         default: macOS 
-      DEVICE:
+      ASR_DEVICE:
         description: DEVICE
         required: false
         default: Galaxy s25 Plus 
-      LANGUAGE:
+      ASR_LANGUAGE:
         description: LANGUAGE
         required: false
         default: Ko 
@@ -68,8 +68,8 @@ jobs:
         env:
           ENDPOINT: ${{ github.event.inputs.ENDPOINT}}
           BROWSER: ${{ github.event.inputs.BROWSER}}
-          DEVICE: ${{ github.event.inputs.DEVICE}}
-          LANGUAGE: ${{ github.event.inputs.LANGUAGE}}
+          ASR_DEVICE: ${{ github.event.inputs.DEVICE}}
+          ASR_LANGUAGE: ${{ github.event.inputs.LANGUAGE}}
           OS: ${{ github.event.inputs.OS}}
           ALLURE_JOB_RUN_ID: ${{ github.event.inputs.ALLURE_JOB_RUN_ID }}
           ALLURE_RESULTS: "allure-results"
