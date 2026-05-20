@@ -65,6 +65,7 @@ def lucky_step(chance: float = 0.6) -> None:
 @allure.story("Восстановление пароля")
 @allure.severity(Severity.NORMAL)
 @allure.label("tag", "Regression")
+@allure.label("layer", "e2e")
 def test_pass_reset():
     with allure.step("Открыть главную страницу сайта"):
         pass
@@ -107,6 +108,7 @@ def test_pass_reset():
 @allure.story("Неуспешная авторизация")
 @allure.severity(Severity.NORMAL)
 @allure.label("tag", "Regression")
+@allure.label("layer", "e2e")
 def test_auth_error():
     with allure.step("Открыть главную страницу сайта"):
         pass
@@ -128,6 +130,7 @@ def test_auth_error():
 @allure.story("Основной поиск")
 @allure.severity(Severity.NORMAL)
 @allure.label("tag", "Regression")
+@allure.label("layer", "e2e")
 def test_main_search_with_sort():
     with allure.step("Перейти в каталог товаров"):
         pass
@@ -178,6 +181,7 @@ def test_main_search_with_sort():
 @allure.story("Сложный поиск")
 @allure.severity(Severity.CRITICAL)
 @allure.label("tag", "Regression")
+@allure.label("layer", "e2e")
 def test_search_missing_item():
     with allure.step("Перейти в каталог товаров"):
         pass
@@ -197,6 +201,7 @@ def test_search_missing_item():
 @allure.story("Основной поиск")
 @allure.severity(Severity.CRITICAL)
 @allure.label("tag", "Regression")
+@allure.label("layer", "e2e")
 def test_article_search():
     with allure.step("Перейти в каталог товаров"):
         pass
@@ -216,6 +221,7 @@ def test_article_search():
 @allure.story("Основной поиск")
 @allure.severity(Severity.CRITICAL)
 @allure.label("tag", "Regression")
+@allure.label("layer", "e2e")
 def test_name_search():
     with allure.step("Перейти в каталог товаров"):
         pass
@@ -235,6 +241,7 @@ def test_name_search():
 @allure.story("Сложный поиск")
 @allure.severity(Severity.CRITICAL)
 @allure.label("tag", "Regression")
+@allure.label("layer", "e2e")
 def test_part_name_search():
     with allure.step("Перейти в каталог товаров"):
         pass
@@ -254,6 +261,7 @@ def test_part_name_search():
 @allure.story("История заказов")
 @allure.severity(Severity.CRITICAL)
 @allure.label("tag", "Regression")
+@allure.label("layer", "e2e")
 def test_order_history():
     with allure.step("Перейти в личный кабинет"):
         pass
@@ -281,6 +289,7 @@ def test_order_history():
 @allure.story("Избранное")
 @allure.severity(Severity.TRIVIAL)
 @allure.label("tag", "Regression")
+@allure.label("layer", "e2e")
 def test_show_favorite_items():
     with allure.step("Перейти в избранное"):
         pass
@@ -296,6 +305,7 @@ def test_show_favorite_items():
 @allure.story("Корзина")
 @allure.severity(Severity.TRIVIAL)
 @allure.label("tag", "Regression")
+@allure.label("layer", "e2e")
 def test_items_in_card():
     with allure.step("Перейти в корзину"):
         pass
