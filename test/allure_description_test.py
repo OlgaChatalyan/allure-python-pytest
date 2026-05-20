@@ -2,6 +2,7 @@ import allure
 from allure_commons.types import Severity
 
 @allure.severity(Severity.CRITICAL)
+@allure.label("layer", "api")
 def test_docstring_description():
     """
     This is a test docstring
@@ -13,6 +14,7 @@ def test_docstring_description():
 
 @allure.epic("Allure TestOps")
 @allure.severity(Severity.NORMAL)
+@allure.label("layer", "e2e")
 @allure.manual(True)
 @allure.description(
     """
@@ -24,6 +26,7 @@ def test_decorated_description():
     pass
 @allure.epic("Allure TestOps")
 @allure.severity(Severity.CRITICAL)
+@allure.label("layer", "api")
 @allure.description_html("""
 This is <b>HTML</b> test description
 <h2>Scenario:</h2>
@@ -35,6 +38,7 @@ def test_decorated_html_description():
     pass
 
 @allure.severity(Severity.CRITICAL)
+@allure.label("layer", "api")
 def test_dynamic_description():
     """
     Initial test description
