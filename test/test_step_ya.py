@@ -1,5 +1,5 @@
 import allure
-@allure.label("layer", "e2e")
+
 
 @allure.step
 def step_function_with_args(arg1, arg2):
@@ -15,7 +15,7 @@ def step_with_placeholder(param):
 def step_function_with_title():
     pass
 
-
+@allure.label("layer", "e2e")
 def test_step():
     with allure.step("Вход в поисковик"):
         step_with_placeholder("ya.ru")
