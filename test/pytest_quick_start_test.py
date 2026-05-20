@@ -6,6 +6,7 @@ pytestmark = [allure.epic("My first epic"), allure.feature("Quick start feature"
 @allure.id(1)
 @allure.story("Simple story")
 @allure.title("test_allure_simple_test displayName")
+@allure.label("layer", "ui")
 def test_allure_simple_test():
     with allure.step("Simple step"):
         pass
