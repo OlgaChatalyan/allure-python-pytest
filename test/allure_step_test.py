@@ -17,6 +17,7 @@ def step_function_with_title():
 
 @allure.epic("Allure TestOps")
 @allure.label("tag", "Regression")
+@allure.label("layer", "ui")
 def test_step():
     with allure.step("Проверка на цветы"):
         step_with_placeholder("Розы")
