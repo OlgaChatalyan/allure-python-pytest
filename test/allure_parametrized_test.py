@@ -6,6 +6,7 @@ import pytest
 @allure.title("test_allure_parametrized_test [{test_param}]")
 @allure.epic("Allure TestOps")
 @allure.label("tag", "Regression")
+@allure.label("layer", "e2e")
 def test_allure_parametrized_test(test_param):
     with allure.step("Step inside parametrized test"):
         pass
@@ -20,5 +21,6 @@ def parametrized_fixture(request):
 
 @allure.epic("Allure TestOps")
 @allure.label("tag", "Regression")
+@allure.label("layer", "e2e")
 def test_allure_parametrized_fixture(parametrized_fixture):
     pass
