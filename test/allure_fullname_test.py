@@ -15,5 +15,6 @@ def allure_reporter(request) -> AllureReporter:
     return listener.allure_logger
 
 @allure.epic("Allure TestOps")
+@allure.label("layer", "ui")
 def test_fullname(allure_reporter):
     assert allure_reporter.get_test(None).fullName == "test.allure_fullname_test#test_fullname"
