@@ -9,6 +9,7 @@ from allure import attachment_type
 @allure.story("smoking pytest")
 @allure.feature("sending attachments")
 @allure.title("Sending 200+ Kbytes attachment")
+@allure.label("layer", "ui")
 @allure.id
 def test_attach_normalimage():
     allure.id()
