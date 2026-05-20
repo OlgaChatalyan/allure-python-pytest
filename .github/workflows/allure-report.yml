@@ -15,19 +15,19 @@ on:
       BROWSER:
         description: Browser
         required: false
-        default: Opera
+        # default: Opera
       OS:
         description: OS
         required: false
-        default: macOS 
-      ASR_DEVICE:
-        description: DEVICE
-        required: false
-        default: Galaxy s25 Plus 
-      ASR_LANGUAGE:
-        description: LANGUAGE
-        required: false
-        default: Ko 
+        # default: macOS 
+      # ASR_DEVICE:
+       #  description: DEVICE
+       # required: false
+       #  default: Galaxy s25 Plus 
+      # ASR_LANGUAGE:
+        # description: LANGUAGE
+        # required: false
+        # default: Ko 
       ALLURE_USERNAME:
         description: "ALLURE_USERNAME service parameter. Leave blank"
         required: false
