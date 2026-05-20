@@ -1,5 +1,5 @@
 import allure
-
+@allure.label("layer", "e2e")
 
 @allure.step
 def step_function_with_args(arg1, arg2):
