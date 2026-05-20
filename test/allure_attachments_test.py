@@ -9,7 +9,7 @@ from allure_commons.types import Severity
 @allure.feature("Attachments")
 @allure.story("Add atachment")
 @allure.severity(Severity.NORMAL)
-@allure.label("layer", "API Tests")
+@allure.label("layer", "api")
 
 def test_attach():
     allure.attach.file(os.path.join("resources", "allure-logo.png"), name="PNG example",
